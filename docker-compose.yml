@@ -32,7 +32,6 @@ services:
   volumes:
    - ./docker/mysql:/var/lib/mysql
    - ./docker/mysql/initdb.d:/docker-entrypoint-initdb.d
-   - mysql-data:/var/lib/mysql
   environment:
     - MYSQL_ROOT_PASSWORD=root
     - MYSQL_DATABASE=training_laravel
