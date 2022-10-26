@@ -57,7 +57,6 @@
             {{ csrf_field() }}
             {{ method_field('delete') }}
           </form>
-          <a href="{{ action('UserController@show', ['user' => $user->id]) }}">詳細</a>
           <a href="{{ action('UserController@edit', ['user' => $user->id]) }}">編集</a>
           <a href="javascript:document.forms['delete{{ $loop->index }}'].submit()" onclick="return confirm('削除しますか？')">削除</a>
         </td>

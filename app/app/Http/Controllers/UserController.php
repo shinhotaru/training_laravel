@@ -23,17 +23,6 @@ class UserController extends Controller
     }
 
     /**
-     * 指定ユーザー詳細表示
-     *
-     * @param  User  $user
-     * @return Response
-     */
-    public function show(User $user)
-    {
-        return view('user.show', compact(['user']));
-    }
-
-    /**
      * ユーザー新規登録画面
      *
      * @return Response
