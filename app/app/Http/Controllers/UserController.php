@@ -17,7 +17,7 @@ class UserController extends Controller
     public function index(Request $request)
     {
         $conditions = collect($request->input('filter'));
-        $users = User::search($conditions)->get();
+        $users = User::all();
 
         return view('user.index', compact(['conditions', 'users']));
     }
