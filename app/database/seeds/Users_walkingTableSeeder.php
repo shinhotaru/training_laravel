@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Userworking;
+use App\UserWalking;
 
 class Users_walkingTableSeeder extends Seeder
 {
@@ -12,6 +12,6 @@ class Users_walkingTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Userworking::class, 10)->create();
+        factory(App\UserWalking::class, 5)->create();
     }
 }
