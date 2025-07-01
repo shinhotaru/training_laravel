@@ -1,0 +1,54 @@
+table {
+  border-collapse: collapse;
+}
+#list th {
+  border: 1px solid;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #4169e1;
+  color: white;
+  border-color: black;
+}
+#list td {
+  border: 1px solid;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#show th {
+  text-align: right;
+  padding-right: 10px;
+}
+
+#show th:after {
+  content: "：";
+}
+
+.newButtonLink {
+  display: block;
+  background: #008000;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  width: 100px;
+  padding:10px 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.newButtonLink:hover {
+  background: #228b22;
+}
+
+p.successMessage {
+  color: green;
+}
+
+.alert {
+  color: red;
+  background-color: #ffe4e1;
+  padding: 1px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: 400px;
+}

@@ -1,0 +1,10 @@
+#!/bin/bash
+
+docker-compose down --rmi all
+docker volume rm -f training_laravel_mysql-data
+
+docker-compose up -d
+
+docker exec -it -w /var/www/app php-training-laravel1 composer install
+docker exec -it -w /var/www/app php-training-laravel1 cp .env.local .env
+docker exec -it -w /var/www/app php-training-laravel1 php artisan migrate
