@@ -6,7 +6,7 @@ services:
      context: "./"
      dockerfile: ./docker/php/Dockerfile
    volumes:
-     - ./app:/var/www/app
+     - .:/var/www
    depends_on:
      - mysql
 
