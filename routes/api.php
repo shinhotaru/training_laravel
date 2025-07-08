@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HelloController;
+use App\Http\Controllers\HelloWorldController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,4 +20,7 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('/hello_world', 'HelloWorldController@index');
+Route::get('/hello_world', [HelloWorldController::class, 'index']);
+
+// Route::get('/hello', 'HelloController@index');
+Route::get('/hello', [HelloController::class, 'index']);
