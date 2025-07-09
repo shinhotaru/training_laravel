@@ -20,13 +20,7 @@ Route::prefix('training')->group(function () {
     Route::resource('user', UserController::class);
 });
 
-
-Route::get('/hello', [HelloController::class, 'index']); 
 Route::get('/hello_world', [HelloWorldController::class, 'index']);
 
 Route::get('/users', [UserController::class, 'index']);
-
-Route::resource('user-walkings', UserWalkingController::class);
-
-Route::get('user-walkings/filter', [UserWalkingController::class, 'filter'])->name('user-walkings.filter');
  

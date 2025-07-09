@@ -21,6 +21,3 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::get('/hello_world', [HelloWorldController::class, 'index']);
-
-// Route::get('/hello', 'HelloController@index');
-Route::get('/hello', [HelloController::class, 'index']);
